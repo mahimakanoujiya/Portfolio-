@@ -1,1 +1,348 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#070816">
+<meta name="description" content="Mahima Kanojia | B.Tech CSE AI & ML student, AI projects, certifications and technology programs.">
+<title>Mahima Kanojia | Portfolio</title>
+<style>
+:root{
+ --bg:#070816;--card:#10142c;--line:#292e65;
+ --text:#f5f5ff;--muted:#b1bbdc;--p:#b45cff;--b:#438cff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{
+ margin:0;background:var(--bg);color:var(--text);
+ font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+ line-height:1.65;overflow-x:hidden;
+ background-image:radial-gradient(ellipse at 80% 5%,#24104c 0,transparent 35%),
+ radial-gradient(ellipse at 0% 45%,#0b2450 0,transparent 35%);
+}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#08091beF;
+ backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+nav{min-height:70px;display:flex;justify-content:space-between;
+ align-items:center;gap:16px}
+.logo{font-weight:850;font-size:18px;white-space:nowrap}
+.logo span{color:var(--p)}
+.links{display:flex;gap:19px;font-size:13px}
+.links a:hover{color:#c9a1ff}
+.menu{display:none;background:#161735;color:white;border:1px solid var(--line);
+ border-radius:10px;padding:8px 12px;font-size:18px}
+.btn{display:inline-block;padding:11px 17px;border-radius:30px;
+ background:linear-gradient(110deg,var(--p),var(--b));font-weight:750;
+ font-size:13px;border:1px solid #a77bff;transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 0 24px #754bff66}
+.btn.alt{background:transparent;border-color:#5254a0}
+section{padding:65px 0;border-bottom:1px solid #1b2045}
+.hero{min-height:490px;display:grid;grid-template-columns:1.1fr .9fr;
+ align-items:center;gap:30px}
+.eyebrow,.kicker{color:#bca3ff;font-size:12px;
+ font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
+h1{font-size:clamp(40px,6vw,70px);line-height:1.08;
+ letter-spacing:-2px;margin:14px 0}
+.gradient{background:linear-gradient(100deg,#d6a4ff,#7ba8ff);
+ color:transparent;background-clip:text;-webkit-background-clip:text}
+.subtitle{color:#c6cbed;font-size:15px}
+.intro{color:#d7dcf5;max-width:510px}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}
+.pill,.tag{font-size:11px;border:1px solid #343b82;background:#111630;
+ padding:5px 11px;border-radius:30px;color:#d8dcff}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.scene{height:320px;display:grid;place-items:center;position:relative;
+ perspective:800px}
+.laptop{width:90%;max-width:400px;animation:float 5s ease-in-out infinite;
+ transform:rotateY(-10deg);filter:drop-shadow(0 18px 25px #513bff45)}
+.screen{height:220px;border:2px solid #7778ff;border-radius:18px 18px 7px 7px;
+ background:linear-gradient(145deg,#1c1b4b,#080a1c);display:flex;
+ flex-direction:column;justify-content:center;align-items:center;
+ box-shadow:inset 0 0 30px #7455ff20}
+.screen .symbol{font-size:45px;color:#c4a2ff}
+.screen strong{font-size:23px;text-align:center;line-height:1.25}
+.screen small{color:#9eaaf3;margin-top:10px}
+.base{height:15px;margin:0 -5%;background:linear-gradient(#8587ff,#282b66);
+ border-radius:3px 3px 15px 15px}
+.float{position:absolute;border:1px solid #5553b2;background:#11142e;
+ padding:12px;border-radius:14px;color:#d4c6ff;font-size:12px;
+ box-shadow:0 0 25px #5741ff30}
+.f1{left:0;top:18%;transform:rotate(-7deg)}
+.f2{right:0;bottom:15%;transform:rotate(6deg)}
+.planet{position:absolute;right:8%;top:8%;width:65px;height:65px;
+ border-radius:50%;background:radial-gradient(circle at 30% 25%,#fff,#a64dff 30%,#252077 75%);
+ box-shadow:0 0 30px #7e4cff}
+@keyframes float{50%{transform:translateY(-10px) rotateY(-7deg)}}
+.heading{margin-bottom:25px}
+h2{font-size:clamp(27px,4vw,36px);line-height:1.2;margin:7px 0 0}
+h3{margin:0 0 10px;font-size:18px}
+p{margin-top:8px}
+.muted{color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.card{min-width:0;padding:21px;border-radius:19px;
+ background:linear-gradient(145deg,#151936d9,#0b0e21);
+ border:1px solid var(--line);box-shadow:0 10px 30px #0002;
+ transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-5px);border-color:#8e67ff}
+.icon{font-size:27px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:13px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:13px 0}
+.tag{padding:3px 8px;font-size:10px}
+.card .btn{margin-top:8px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.list{padding-left:19px;color:var(--muted);font-size:13px}
+.list li{margin:8px 0}
+.score{font-size:27px;font-weight:850;color:#c7a1ff}
+.qualification{display:flex;justify-content:space-between;gap:12px;
+ align-items:center;border-bottom:1px solid #292d52;padding:12px 0}
+.qualification:last-child{border:0}
+.qualification strong{font-size:13px}
+.qualification small{display:block;color:var(--muted)}
+.badge{display:inline-block;font-size:10px;color:#c5b3ff;
+ border:1px solid #53438d;background:#1b1640;border-radius:30px;
+ padding:3px 8px;white-space:nowrap}
+.skillgrid{display:flex;flex-wrap:wrap;gap:9px}
+.skill{border:1px solid #323873;background:#10152f;border-radius:11px;
+ padding:9px 12px;font-size:12px;color:#d9dcff}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.contact a{display:block;border:1px solid #303773;background:#10152e;
+ border-radius:12px;padding:12px;font-size:13px;overflow-wrap:anywhere}
+.contact a:hover{border-color:#a56bff}
+footer{padding:27px 0;color:#9ca8d1;font-size:12px;text-align:center}
+footer strong{color:#c4a3ff}
+.reveal{animation:appear .8s both}
+@keyframes appear{from{opacity:0;transform:translateY(15px)}
+ to{opacity:1;transform:translateY(0)}}
+@media(max-width:800px){
+ .links{gap:10px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .hero{grid-template-columns:1fr;padding:48px 0}
+ .scene{height:290px}.two{grid-template-columns:1fr}
+}
+@media(max-width:580px){
+ .menu{display:block}
+ .links{display:none;position:absolute;top:65px;left:4%;width:92%;
+  background:#0e1028;border:1px solid var(--line);border-radius:15px;
+  padding:12px;flex-direction:column;gap:0}
+ .links.open{display:flex}
+ .links a{padding:10px;border-bottom:1px solid #23264d}
+ .links a:last-child{border:0}
+ .grid{grid-template-columns:1fr}
+ .hero{text-align:center}.intro{margin:auto}
+ .pills,.actions{justify-content:center}
+ .scene{height:260px}.screen{height:175px}
+ .laptop{width:82%}.float{font-size:10px;padding:8px}
+ .qualification{align-items:flex-start}
+ section{padding:48px 0}
+ .contact{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+<header>
+ <nav class="wrap">
+  <a class="logo" href="#home">✦ Mahima <span>Kanojia</span></a>
+  <div class="links" id="navlinks">
+   <a href="#home">Home</a><a href="#about">About</a>
+   <a href="#education">Education</a><a href="#projects">Projects</a>
+   <a href="#certifications">Certifications</a>
+   <a href="#programs">Programs</a><a href="#contact">Contact</a>
+  </div>
+  <button class="menu" id="menu" aria-label="Toggle menu"
+   aria-expanded="false">☰</button>
+ </nav>
+</header>
+
+<main>
+<section class="wrap hero" id="home">
+ <div class="reveal">
+  <div class="eyebrow">✦ Student Developer · Lifelong Learner</div>
+  <h1>Mahima<br><span class="gradient">Kanojia</span></h1>
+  <div class="subtitle">B.Tech CSE (AI &amp; ML) · Centre for Advanced Studies, AKTU</div>
+  <p class="intro">Exploring AI, software, and creative technology. I enjoy turning ideas into practical projects while continuously learning and growing.</p>
+  <div class="pills">
+   <span class="pill">AI &amp; ML</span><span class="pill">Python / C++</span>
+   <span class="pill">AI Evaluation</span><span class="pill">UI/UX</span>
+   <span class="pill">Open Source</span>
+  </div>
+  <div class="actions">
+   <a class="btn" href="#projects">Explore Projects ↗</a>
+   <a class="btn alt" href="#contact">Let's Connect</a>
+  </div>
+ </div>
+ <div class="scene" aria-label="Decorative 3D coding illustration">
+  <div class="planet"></div>
+  <div class="float f1">✧<br>Dream<br>Build</div>
+  <div class="float f2">Code<br>Learn<br>Grow ♡</div>
+  <div class="laptop">
+   <div class="screen"><div class="symbol">&lt;/&gt;</div>
+    <strong>Ideas into<br>impact.</strong>
+    <small>curiosity = True;</small>
+   </div><div class="base"></div>
+  </div>
+ </div>
+</section>
+
+<section id="about"><div class="wrap reveal">
+ <div class="heading"><div class="kicker">Who I am</div>
+  <h2>About <span class="gradient">Me</span></h2></div>
+ <div class="two">
+  <div class="card"><div class="icon">✧</div>
+   <h3>Curious by nature</h3>
+   <p class="muted">I'm a first-year Computer Science student specialising in AI and Machine Learning at Centre for Advanced Studies, AKTU. I'm interested in AI tools, software, data, design, and technology-driven ideas.</p>
+   <p class="muted">I want to learn through real projects, collaborate with other students, and contribute to technology communities.</p>
+  </div>
+  <div class="card"><div class="icon">⌘</div>
+   <h3>What I'm exploring</h3>
+   <div class="skillgrid">
+    <span class="skill">AI model evaluation</span><span class="skill">Prompt engineering</span>
+    <span class="skill">Python &amp; C++</span><span class="skill">Data analysis</span>
+    <span class="skill">UI/UX design</span><span class="skill">Web development</span>
+    <span class="skill">Technology programs</span><span class="skill">Hackathons</span>
+   </div>
+  </div>
+ </div>
+</div></section>
+
+<section id="education"><div class="wrap reveal">
+ <div class="heading"><div class="kicker">Academic background</div>
+  <h2>Education &amp; <span class="gradient">Qualifications</span></h2></div>
+ <div class="two">
+  <div class="card">
+   <div class="qualification"><div><strong>B.Tech — CSE (AI &amp; ML)</strong>
+    <small>Centre for Advanced Studies, AKTU New Campus</small><small>2026–Present · 1st Year</small></div>
+    <span class="badge">Ongoing</span></div>
+   <div class="qualification"><div><strong>Intermediate · Class XII</strong>
+    <small>Wisdom Way Progressive Inter College</small></div><div class="score">86.8%</div></div>
+   <div class="qualification"><div><strong>High School · Class X</strong>
+    <small>Wisdom Way Progressive Inter College</small></div><div class="score">95%</div></div>
+  </div>
+  <div class="card">
+   <div class="icon">⌘</div><h3>Technical &amp; Creative Skills</h3>
+   <div class="skillgrid">
+    <span class="skill">AI / ML concepts</span><span class="skill">LLM evaluation</span>
+    <span class="skill">Prompt engineering</span><span class="skill">C / C++</span>
+    <span class="skill">Python</span><span class="skill">DSA learning</span>
+    <span class="skill">SQL</span><span class="skill">Excel</span>
+    <span class="skill">Data analysis</span><span class="skill">GitHub</span>
+    <span class="skill">UI/UX</span><span class="skill">SEO with AI</span>
+   </div>
+   <p class="muted">Continuously developing practical skills through learning and projects.</p>
+  </div>
+ </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+ <div class="heading"><div class="kicker">Ideas in progress</div>
+  <h2>Featured <span class="gradient">Projects</span></h2>
+  <p class="muted">A selection of concepts and websites I've worked on.</p></div>
+ <div class="grid">
+  <article class="card"><div class="icon">✚</div><h3>Curera AI</h3>
+   <p>A voice/text-first healthcare communication and routing concept that organises user-provided information into a structured case summary for professional review. Human-in-the-loop; not a diagnosis or prescription tool.</p>
+   <div class="tags"><span class="tag">AI Concept</span><span class="tag">Healthcare</span><span class="tag">Hackathon</span></div>
+   <a class="btn" href="https://curera-ai.vercel.app/" target="_blank" rel="noopener">View Project ↗</a>
+  </article>
+  <article class="card"><div class="icon">✎</div><h3>SketchBloom AI</h3>
+   <p>An AI-assisted drawing tutorial app concept for guided practice, learning drawing techniques, and managing personal artwork.</p>
+   <div class="tags"><span class="tag">AI Concept</span><span class="tag">Learning</span></div>
+   <a class="btn" href="mailto:mahikanoujiya69@gmail.com?subject=SketchBloom%20AI">Ask About Project ↗</a>
+  </article>
+  <article class="card"><div class="icon">🌿</div><h3>GreenBasket</h3>
+   <p>A plant e-commerce website built using WordPress and WooCommerce, with online shopping features.</p>
+   <div class="tags"><span class="tag">WordPress</span><span class="tag">WooCommerce</span><span class="tag">Elementor</span></div>
+   <a class="btn" href="https://greenbasketshop.in/" target="_blank" rel="noopener">Visit Website ↗</a>
+  </article>
+  <article class="card"><div class="icon">▤</div><h3>FlipRead</h3>
+   <p>A PDF reader web app concept for reading, highlighting, and managing PDF documents.</p>
+   <div class="tags"><span class="tag">Web App</span><span class="tag">PDF</span></div>
+   <a class="btn" href="https://flip-read.vercel.app/" target="_blank" rel="noopener">View Project ↗</a>
+  </article>
+  <article class="card"><div class="icon">💧</div><h3>Neer-Drishti</h3>
+   <p>An early-stage water and groundwater insight concept exploring data and GIS-based monitoring ideas.</p>
+   <div class="tags"><span class="tag">Innovation</span><span class="tag">GIS Concept</span></div>
+   <a class="btn" href="mailto:mahikanoujiya69@gmail.com?subject=Neer-Drishti">Ask About Project ↗</a>
+  </article>
+  <article class="card"><div class="icon">⌘</div><h3>More on GitHub</h3>
+   <p>Explore my repositories and follow my learning journey as I build and publish more projects.</p>
+   <div class="tags"><span class="tag">Learning</span><span class="tag">Open Source</span></div>
+   <a class="btn" href="https://github.com/mahimakanoujiya" target="_blank" rel="noopener">Visit GitHub ↗</a>
+  </article>
+ </div>
+</div></section>
+
+<section id="certifications"><div class="wrap reveal">
+ <div class="heading"><div class="kicker">Courses &amp; learning</div>
+  <h2>Certifications</h2>
+  <p class="muted">Certifications listed in my resume.</p></div>
+ <div class="grid">
+  <article class="card"><div class="icon">🛡️</div><h3>Network Security Course</h3><p>Great Learning</p><span class="badge">Certification</span></article>
+  <article class="card"><div class="icon">📊</div><h3>Financial Accounting Course</h3><p>Great Learning</p><span class="badge">Certification</span></article>
+  <article class="card"><div class="icon">🎨</div><h3>UI/UX and VI Designer</h3><p>HCL — Certified</p><span class="badge">Certification</span></article>
+  <article class="card"><div class="icon">🤖</div><h3>AI Workshop</h3><p>be10x</p><span class="badge">Certification</span></article>
+  <article class="card"><div class="icon">🧠</div><h3>AI Foundation</h3><p>TCS iON</p><span class="badge">Certification</span></article>
+  <article class="card"><div class="icon">🔐</div><h3>Network Security Engineer</h3><p>Skill India</p><span class="badge">Certification</span></article>
+  <article class="card"><div class="icon">✍️</div><h3>Prompt Engineering</h3><p>SoloLearn</p><span class="badge">Certification</span></article>
+  <article class="card"><div class="icon">⚙️</div><h3>Robotics &amp; AI</h3><p>SoloLearn</p><span class="badge">Certification</span></article>
+  <article class="card"><div class="icon">📣</div><h3>SEO with AI</h3><p>SoloLearn</p><span class="badge">Certification</span></article>
+  <article class="card"><div class="icon">💬</div><h3>ChatGPT for Marketing</h3><p>SoloLearn</p><span class="badge">Certification</span></article>
+ </div>
+</div></section>
+
+<section id="programs"><div class="wrap reveal">
+ <div class="heading"><div class="kicker">Community &amp; leadership</div>
+  <h2>Ongoing <span class="gradient">Programs</span></h2>
+  <p class="muted">These are ongoing or enrolled programs, not completed certifications.</p></div>
+ <div class="grid">
+  <article class="card"><div class="icon">☁️</div><h3>AWS Student Builder Group Leader</h3>
+   <p>Ongoing leadership program focused on student community building and cloud learning.</p>
+   <span class="badge">Ongoing</span></article>
+  <article class="card"><div class="icon">◎</div><h3>Unstop Campus Champion</h3>
+   <p>Ongoing campus community and student opportunity program.</p>
+   <span class="badge">Ongoing</span></article>
+  <article class="card"><div class="icon">▦</div><h3>Microsoft Learn Student Ambassador</h3>
+   <p>Enrolled/ongoing student technology community program.</p>
+   <span class="badge">Enrolled / Ongoing</span></article>
+ </div>
+</div></section>
+
+<section id="contact"><div class="wrap reveal">
+ <div class="heading"><div class="kicker">Let's connect</div>
+  <h2>Have an idea? <span class="gradient">Let's talk.</span></h2>
+  <p class="muted">Open to internships, hackathons, student programs, collaboration, and learning opportunities.</p></div>
+ <div class="contact">
+  <a href="mailto:mahikanoujiya69@gmail.com">✉ &nbsp; Email · mahikanoujiya69@gmail.com ↗</a>
+  <a href="https://www.linkedin.com/in/mahima-kanoujiya-041a87411" target="_blank" rel="noopener">in &nbsp; LinkedIn · Connect with me ↗</a>
+  <a href="https://github.com/mahimakanoujiya" target="_blank" rel="noopener">⌘ &nbsp; GitHub · View repositories ↗</a>
+  <a href="https://www.instagram.com/gloryy_13_/" target="_blank" rel="noopener">◎ &nbsp; Instagram · Follow along ↗</a>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <strong>✦ Dream · Build · Grow</strong>
+ <p>Designed with curiosity and 💜 by Mahima Kanojia</p>
+ <span>© <span id="year"></span> · Keep learning. Keep building.</span>
+</div></footer>
+
+<script>
+const menu=document.getElementById('menu');
+const links=document.getElementById('navlinks');
+menu.addEventListener('click',()=>{
+ const open=links.classList.toggle('open');
+ menu.setAttribute('aria-expanded',String(open));
+ menu.textContent=open?'✕':'☰';
+});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+ links.classList.remove('open');
+ menu.setAttribute('aria-expanded','false');
+ menu.textContent='☰';
+}));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+     </html>
+   
